@@ -10914,6 +10914,10 @@ body {
   clear: both;
 }
 
+.alert-warning {
+  font-size: 2rem !important;
+}
+
 nav {
   height: 80px;
   position: relative;
