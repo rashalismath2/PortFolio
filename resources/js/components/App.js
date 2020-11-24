@@ -32,6 +32,12 @@ class App extends Component {
         return (
             <ThemeProvider theme={theme}>
                 <div>
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>Hey yo! </strong> This site is still under construction. :)
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
                     <header>
                         <Nav></Nav>
 
