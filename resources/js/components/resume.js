@@ -2,7 +2,7 @@ import React from "react";
 
 function Resume() {
     return (
-        <div className="cont-in resume-cont">
+        <div  className="cont-in resume-cont">
             <h1 className="cont-header">Resume,</h1>
             <p className="cont-text">
                 A passionate individual about the field of Computer Science and
@@ -65,9 +65,9 @@ function Resume() {
                             <p className="ed-desc">Adobe XD</p>
                         </li>
                         <li>
-                            <p className="ed-title">Programming Languages</p>
+                            <p className="ed-title">PROGRAMMING LANGUAGES</p>
                             <p className="ed-desc">
-                                Java, C#, PHP, Python, Javascript, TypeScript
+                                Java, C#, PHP, Python, JavaScript, TypeScript
                             </p>
                         </li>
                         <li>
@@ -79,7 +79,7 @@ function Resume() {
                         <li>
                             <p className="ed-title">BACK-END FRAMEWORKS</p>
                             <p className="ed-desc">
-                                LARAVEL, SPRING BOOT, NODE.Js, DJango
+                                LARAVEL,NODE.Js
                             </p>
                         </li>
                         <li>
@@ -90,8 +90,8 @@ function Resume() {
                             </p>
                         </li>
                         <li>
-                            <p className="ed-title">VERSION CONTROL</p>
-                            <p className="ed-desc">GitHub</p>
+                            <p className="ed-title">DevOps</p>
+                            <p className="ed-desc">GitHub, CircleCI, Docker</p>
                         </li>
                     </ul>
                 </div>

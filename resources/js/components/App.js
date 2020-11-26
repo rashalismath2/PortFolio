@@ -8,6 +8,7 @@ import Nav from "./Nav";
 import Bio from "./bio";
 import Resume from "./resume";
 import Projects from "./projects";
+import Contact from "./contact";
 
 class App extends Component {
     constructor(props) {
@@ -21,7 +22,9 @@ class App extends Component {
         setInterval(() => {
             var state = this.state.showDash;
             var element = document.querySelector(".dash_blink1");
+            var element2 = document.querySelector(".dash_blink2");
             element.hidden = state;
+            element2.hidden = state;
             this.setState({
                 showDash: !state
             });
@@ -40,7 +43,6 @@ class App extends Component {
                     </div>
                     <header>
                         <Nav></Nav>
-
                         <section className="bio-out-cont container">
                             <Bio></Bio>
                         </section>
@@ -74,7 +76,7 @@ class App extends Component {
                                         ></i>
                                     </span>
                                 </div>
-                                <form action="./my-cv">
+                                <form action="./storage/pdf/resume.pdf">
                                     <button type="submit">Download CV</button>
                                 </form>
                             </div>
@@ -90,6 +92,12 @@ class App extends Component {
                     <section id="projects" className="container">
                         <Projects></Projects>
                     </section>
+                    <div id="contact-main">
+                        <section id="contact" className="container">
+                        <h1 className="cont-header">Get in touch<span className="dash_blink2">_</span></h1>
+                            <Contact></Contact>
+                        </section>
+                    </div>
 
                 </div>
             </ThemeProvider>

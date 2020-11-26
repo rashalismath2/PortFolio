@@ -47,14 +47,14 @@ class Bio extends Component{
                                 <li>23</li>
                                 <li>+94-768646392</li>
                                 <li>Rashalismath@gmail.com</li>
-                                <li>17/4, Wijayaba lane,kalubovila.</li>
+                                <li>17/4, Wijayaba Lane,Kalubovila.</li>
                             </ul>
                         </div>
                         <ul className="bio-social">
-                            <li><i className="fa fa-facebook-official fa-1x" aria-hidden="true"></i></li>
-                            <li><i className="fa fa-github fa-1x" aria-hidden="true"></i></li>
-                            <li><i className="fa fa-twitter fa-1x" aria-hidden="true"></i></li>
-                            <li><i className="fa fa-linkedin fa-1x" aria-hidden="true"></i></li>
+                            <li><a target="_blank" href="https://facebook.com/razzaq.ismath"><i className="fa fa-facebook-official fa-1x" aria-hidden="true"></i></a></li>
+                            <li><a href="https://github.com/rashalismath2" target="_blank"><i className="fa fa-github fa-1x" aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/RazzaqIsmath" target="_blank"><i className="fa fa-twitter fa-1x" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/rashal-ismathulla/" target="_blank"><i className="fa fa-linkedin fa-1x" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                 </div>

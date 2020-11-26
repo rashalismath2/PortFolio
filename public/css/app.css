@@ -10945,8 +10945,14 @@ nav ul li a {
   color: inherit;
 }
 
+nav ul li a:hover {
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.4;
+}
+
 header {
-  background: url(/images/profile.jpg?57887a2bd38940ac54d0631b77528e8c);
+  background: url(/images/profile.jpg?26d097bc14e755dbd8503f4781033848);
   height: 450px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11026,6 +11032,16 @@ ul.bio-social li {
 
 .bio-social {
   margin-top: 18px;
+}
+
+.bio-social a {
+  color: white;
+  text-decoration: none;
+}
+
+.bio-social a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 ul.bio-social li {
@@ -11180,11 +11196,13 @@ ul.bio-social li:hover {
 
 .project-image {
   flex: 1;
+  position: relative;
 }
 
 .project-image img {
   width: 100%;
   height: 100%;
+  max-height: 250px;
 }
 
 .project-det {
@@ -11245,5 +11263,114 @@ ul.bio-social li:hover {
 
 .project-repo a:hover {
   opacity: 1;
+}
+
+.project-image button {
+  background: #6d56c1;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  border: 0;
+  right: calc(50% - 40px);
+  top: calc(50% - 20px);
+}
+
+.project-image-overlay {
+  width: 100%;
+  height: 100%;
+  background: #555555;
+  position: absolute;
+  top: 0;
+  opacity: 0.8;
+}
+
+.project-image-model-dialog {
+  width: 80%;
+  max-width: 100% !important;
+}
+
+.project-image-model-image {
+  width: 100%;
+}
+
+#contact-main {
+  background: linear-gradient(54deg, rgba(74, 76, 179, 0.95) 34%, rgba(206, 156, 156, 0.95));
+  padding: 50px;
+}
+
+#contact h1 {
+  padding-top: 25px;
+}
+
+#contact {
+  color: white;
+}
+
+#contact-cont .alert {
+  position: absolute;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  right: 0;
+  font-size: 1.3rem;
+}
+
+#contact-cont {
+  position: relative;
+  display: flex;
+}
+
+#cotact-direct {
+  width: 40%;
+  padding-top: 40px;
+}
+
+#cotact-message input::-moz-placeholder, #cotact-message textarea::-moz-placeholder {
+  color: white;
+}
+
+#cotact-message input:-ms-input-placeholder, #cotact-message textarea:-ms-input-placeholder {
+  color: white;
+}
+
+#cotact-message input::placeholder,
+#cotact-message textarea::placeholder {
+  color: white;
+}
+
+#cotact-message input,
+#cotact-message textarea {
+  width: 80%;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+#cotact-message {
+  width: 60%;
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  padding-top: 40px;
+}
+
+#cotact-direct .bio-details-det {
+  margin-top: 0 !important;
+}
+
+#contact-button {
+  background: #6d56c1;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  display: block;
+  margin-left: calc(50% - 40%);
+  width: 50%;
+  border: 0;
+  box-shadow: 1px -1px 10px -1px rgba(0, 0, 0, 0.75);
 }
 
