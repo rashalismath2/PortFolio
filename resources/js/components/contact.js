@@ -30,11 +30,13 @@ class Contact extends Component{
         axios.post("/api/messages",{
             name:this.state.name,
             email:this.state.email,
-            message:this.state.message
+            message:this.state.message.toString()
         })
         .then(res=>{
-            console.log(res)
             this.setState({
+                name:"",
+                email:"",
+                message:"",
                 hasErrors:false,
                 showSpinner:false,
                 showSuccessMessage:true
@@ -56,24 +58,24 @@ class Contact extends Component{
         var spinner=""
 
         if(this.state.hasErrors){
-            errors=<div  class="alert alert-danger alert-dismissible fade show" role="alert">
+            errors=<div  className="alert alert-danger alert-dismissible fade show" role="alert">
                 Something went wrong with the inputs. Please try again.
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <button type="button" className="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div>
         }
         if(this.state.showSuccessMessage){
-            errors=<div  class="alert alert-success alert-dismissible fade show" role="alert">
+            errors=<div  className="alert alert-success alert-dismissible fade show" role="alert">
                 You message has been submitted. Thank you.
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <button type="button" className="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div>
         }
         if(this.state.showSpinner){
-            spinner=<div class="spinner-border text-light" role="status">
-                    <span class="sr-only">Loading...</span>
+            spinner=<div className="spinner-border text-light" role="status">
+                    <span className="sr-only">Loading...</span>
                 </div>
         }
 
@@ -108,9 +110,9 @@ class Contact extends Component{
                 </div>
                 <div id="cotact-message">
                     <p>Or just write me a letter here_</p>
-                    <input required placeholder="Enter Your Name" onChange={this.inputs}  name="name" />
-                    <input required onChange={this.inputs} placeholder="Enter Your Email" name="email" />
-                    <textarea required onChange={this.inputs} placeholder="Enter Your Message" name="message"></textarea>
+                    <input value={this.state.name} required placeholder="Enter Your Name" onChange={this.inputs}  name="name" />
+                    <input value={this.state.email} required onChange={this.inputs} placeholder="Enter Your Email" name="email" />
+                    <textarea value={this.state.message} required onChange={this.inputs} placeholder="Enter Your Message" name="message"></textarea>
                     <button onClick={this.submitMessage} id="contact-button">
                     {spinner}
                     {this.state.showSpinner?"":"SEND"}

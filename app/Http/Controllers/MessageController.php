@@ -7,6 +7,9 @@ use Illuminate\Support\Facades\Validator;
 
 use App\message;
 
+
+use App\Events\SendEmail;
+
 class MessageController extends Controller
 {
     public function new(Request $request){
@@ -22,13 +25,9 @@ class MessageController extends Controller
             return response()->json($validator->errors(),500);
         }
 
+        event(new SendEmail($request));
 
-        $message=new Message();
-        $message->name=$request->name;
-        $message->email=$request->email;
-        $message->message=$request->message;
-        $message->create();
+        return response()->json(["Your message has been sent successfully"]);
 
-        return response()->json(["message"=>"message created"]);
     }
 }
