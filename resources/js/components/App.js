@@ -76,7 +76,7 @@ class App extends Component {
                                         ></i>
                                     </span>
                                 </div>
-                                <form action="./storage/pdf/resume.pdf">
+                                <form action="/pdf/resume.pdf">
                                     <button type="submit">Download CV</button>
                                 </form>
                             </div>
