@@ -15,7 +15,7 @@ class Projects extends Component{
                                         "database. I also had to use third party API’s to build a fully functional app",
                         tech:["Android Studio","MySQL","Node.js"],
                         repo:"https://github.com/rashalismath2/library-app",
-                        img:"./storage/images/mobile.jpg"
+                        img:"/images/mobile.jpg"
                     }
                 ],
                 web:[
@@ -26,7 +26,7 @@ class Projects extends Component{
                                     "WebRTC API to build the video stream capability.",
                         tech:["Node.js","Vue.js","MySQL","Pusher.js","WebRTC"],
                         repo:"https://github.com/rashalismath2/social",
-                        img:"./storage/images/cons.jpg"
+                        img:"/images/cons.jpg"
                     },
                     {
                         title:"Resource allocation system (College Project)",
@@ -34,21 +34,21 @@ class Projects extends Component{
                                     "Here I used Laravel and Vue.js frameworks with MySQL database.",
                         tech:["Laravel","MySQL","Vue.js"],
                         repo:"https://github.com/rashalismath2/wdd",
-                        img:"./storage/images/wdd.jpg"
+                        img:"/images/wdd.jpg"
                     },
                     {
                         title:"Accounting software",
                         description:"NaN",
                         tech:["Laravel","MySQL"],
                         repo:"https://github.com/rashalismath2/accounts",
-                        img:"./storage/images/accounts.jpg"
+                        img:"/images/accounts.jpg"
                     },
                     {
                         title:"Realstate website",
                         description:"NaN",
                         tech:["Laravel","MySQL","React.js"],
                         repo:"https://github.com/rashalismath2/realstate",
-                        img:"./storage/images/realstate.jpg"
+                        img:"/images/realstate.jpg"
                     },
                 ]
             }
