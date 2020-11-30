@@ -29,6 +29,8 @@ class App extends Component {
                 showDash: !state
             });
         }, 500);
+
+ 
     }
 
     render() {

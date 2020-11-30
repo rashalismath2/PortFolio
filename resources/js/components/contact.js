@@ -86,7 +86,6 @@ class Contact extends Component{
                     <div className="bio-details-det">
                     <div className="bio-det-titles">
                         <ul >
-                            <li>AGE :</li>
                             <li>PHONE :</li>
                             <li>EMAIL :</li>
                             <li>ADDRESS :</li>
@@ -94,7 +93,6 @@ class Contact extends Component{
                     </div>
                     <div className="bio-det-vals">
                         <ul>
-                            <li>23</li>
                             <li>+94-768646392</li>
                             <li>Rashalismath@gmail.com</li>
                             <li>17/4, Wijayaba Lane,Kalubovila.</li>
